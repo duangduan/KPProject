@@ -20,7 +20,7 @@ include("connectDB/connect.php");
 <script src="css/5grid/init.js?use=mobile,desktop,1000px&amp;mobileUI=1&amp;mobileUI.theme=none"></script>
 <!--[if IE 9]><link rel="stylesheet" href="css/style-ie9.css"><![endif]-->
 </head>
-<body background="">
+<body>
 <div id="header-wrapper">
   <header id="header" class="5grid-layout">
     <div class="row">
