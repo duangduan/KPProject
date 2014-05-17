@@ -45,43 +45,6 @@ include("connectDB/connect.php");
       <section>
         <h2>รายชื่อผู้บรรยาย</h2>
       </section>
-	  <?php
-	  
-	  $slqSelectDub = "SELECT * FROM dub";
-	  $sqlQueryDub = mysql_query($slqSelectDub);
-	  
-	  while($rsSelectDub = mysql_fetch_array($sqlQueryDub)){
-	  
-	  		//$img_source_sr = "images/noimage02.jpg";
-			$full_name	= $rsSelectDub[1];
-	  	
-	
-	  
-	  ?>
-	 
-	  
-	  
-      <div class="row">
-        <div class="12u">
-          <div class="row">
-            <div class="3u">
-              <section>
-                <div>
-                  <div class="image-style1"><a href="#"><img src="images/pics06.jpg" alt=""></a></div>
-                  <div><a href="#"><img src="css/images/img02.png" width="262" height="30" alt=""></a></div>
-                </div>
-                <p> <? echo $full_name;?></p>
-                <p class="button"><a href="#">Read Full Details</a></p>
-              </section>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-	<?
-	}
-	?>
 
 	<div id="feature-content">
       <div class="row">
