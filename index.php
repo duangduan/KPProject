@@ -26,8 +26,8 @@ include("connectDB/connect.php");
     <div class="row">
       <div class="12u">
         <!-- Logo -->
-        <h1><a href="#" class="mobileUI-site-name">ข้าวปุ้น Team..</a></h1>
-        <p>นักพากย์บอลคนไหนที่คุณชอบ ?</p>
+        <h1><a href="#" class="mobileUI-site-name"></a></h1>
+        <p>นักพากย์บอลคนไหนที่คุณชื่นชอบ ?</p>
         <!-- Nav -->
         <nav class="mobileUI-site-nav"> <a href="index.html" class="active">Homepage</a> <a href="threecolumn.html">Three Column</a> <a href="twocolumn1.html">Two Column #1</a> <a href="twocolumn2.html">Two Column #2</a> <a href="onecolumn.html">One Column</a> </nav>
       </div>
@@ -45,7 +45,6 @@ include("connectDB/connect.php");
       <section>
         <h2>รายชื่อผู้บรรยาย</h2>
       </section>
-	  
 	  <?php
 	  
 	  $slqSelectDub = "SELECT * FROM dub";
@@ -59,6 +58,7 @@ include("connectDB/connect.php");
 	
 	  
 	  ?>
+	 
 	  
 	  
       <div class="row">
@@ -79,10 +79,10 @@ include("connectDB/connect.php");
         </div>
       </div>
     </div>
-	
 	<?
 	}
 	?>
+
 	<div id="feature-content">
       <div class="row">
         <div class="12u">
