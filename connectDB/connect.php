@@ -1,7 +1,7 @@
 <?php
 
 
-$hostname = "http://128.199.230.16/phpmyadmin/";
+$hostname = "localhost";
 $database = "kpteam";
 $username = "kpteam";
 $password = "kpteam";
