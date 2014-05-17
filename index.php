@@ -82,7 +82,7 @@ include("connectDB/connect.php");
 			<option value="2seven">สมศักดิ์ สงวนทรัพย์</option>
   			<option value="2eight">บูรณิจฉ์ รัตนวิเชียร</option>
 		</select>
-		<br><br>
+		<br>
 		<p class="button"><a href="#">ร่วมโหวต !</a></p>
 		</center>
 		
@@ -91,24 +91,21 @@ include("connectDB/connect.php");
 	  
 	  <div id="feature-content">
 	  </div>
-	  
 	  <?php
-	 	$sqlSelectUser = "select * from dub where sp_id";
-		$querySelectUser = mysql_query($sqlSelectUser);
+	 	$sqlSelectDub = "select * from dub where sp_id";
+		$querySelectDub = mysql_query($sqlSelectDub);
 	
-	while($rsSelectUser = mysql_fetch_array($querySelectUser)){
+	while($rsSelectDub = mysql_fetch_array($querySelectDub)){
 	
-		$img_source_sr = $rsSelectUser[6];
-		$full_name_sr	= $rsSelectUser[1];
-		$status_sr = $rsSelectUser[2];
-		$detail = $rsSelectUser[3];
+		$img_source_sr = $rsSelectDub[6];
+		$full_name_sr	= $rsSelectDub[1];
+		$nickname_sr = $rsSelectDub[2];
+		$detail = $rsSelectDub[3];
 		?>
 	
-		
-	
-      <div class="row">
+	<br>
+      <!--<div class="row">
         <div class="12u">
-          <div class="row">
             <div class="3u">
               <section>
                 <div>
@@ -119,15 +116,28 @@ include("connectDB/connect.php");
                 <p class="button"><a href="#">Rate now!</a></p>
               </section>
             </div>
-          </div>
+        </div>
+      </div>-->
+	  <div id="page">
+      <div class="row">
+        <div class="12u">
+          <section id="content">
+            <h2><? echo $full_name_sr; ?></h2>
+            <p class="subtitle"><? echo $nickname_sr;?></p>
+            <div class="alignleft">
+              <div class="image-style1"><a href="#"><img src="<? echo $img_source_sr; ?>" alt=""></a></div>
+              <div><a href="#"><img src="css/images/img02.png" width="262" height="30" alt=""></a></div>
+            </div>
+            <p><? echo $detail;?> </p>
+          </section>
         </div>
       </div>
+    </div>
     
 		<?
 	}
 ?>
-</div>
-  </div>
+
 </div>
 <div class="5grid-layout">
   <div id="copyright">
