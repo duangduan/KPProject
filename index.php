@@ -20,7 +20,7 @@ include("connectDB/connect.php");
 <script src="css/5grid/init.js?use=mobile,desktop,1000px&amp;mobileUI=1&amp;mobileUI.theme=none"></script>
 <!--[if IE 9]><link rel="stylesheet" href="css/style-ie9.css"><![endif]-->
 </head>
-<body background="images/img_3157.jpg">
+<body background="">
 <div id="header-wrapper">
   <header id="header" class="5grid-layout">
     <div class="row">
@@ -29,7 +29,7 @@ include("connectDB/connect.php");
         <h1><a href="#" class="mobileUI-site-name"></a></h1>
         <p>นักพากย์บอลคนไหนที่คุณชื่นชอบ ?</p>
         <!-- Nav -->
-        <nav class="mobileUI-site-nav"> <a href="index.php" class="active">Homepage</a> <a href="vote.php">Vote Us</a> </nav>
+        <nav class="mobileUI-site-nav"> <a href="index.html" class="active">Homepage</a> <a href="threecolumn.html">Three Column</a> <a href="twocolumn1.html">Two Column #1</a> <a href="twocolumn2.html">Two Column #2</a> <a href="onecolumn.html">One Column</a> </nav>
       </div>
     </div>
   </header>
@@ -89,65 +89,44 @@ include("connectDB/connect.php");
       </section>
 	  
 	  
-<<<<<<< HEAD
 	  <div id="feature-content">
 	  </div>
 	  
 	  <?php
 	 	$sqlSelectUser = "select * from dub where sp_id";
-=======
-	 <?php
-	 	$sqlSelectUser = "select * from dub";
->>>>>>> ef85b9b09fbc3c86165f8a0efdb6d731a28de63a
 		$querySelectUser = mysql_query($sqlSelectUser);
 	
-		while($rsSelectUser = mysql_fetch_array($querySelectUser)){
+	while($rsSelectUser = mysql_fetch_array($querySelectUser)){
 	
-			$img_source_sr = $rsSelectUser[6];
-			$full_name_sr	= $rsSelectUser[1];
-			$status_sr = $rsSelectUser[2];
-			$detail = $rsSelectUser[3];
+		$img_source_sr = $rsSelectUser[6];
+		$full_name_sr	= $rsSelectUser[1];
+		$status_sr = $rsSelectUser[2];
+		$detail = $rsSelectUser[3];
 		?>
+	
 		
 	
       <div class="row">
         <div class="12u">
-       
           <div class="row">
             <div class="3u">
               <section>
                 <div>
-                  <div class="image-style1"><a href="#"><img src="<?php echo $img_source_sr; ?>" alt=""></a></div>
+                  <div class="image-style1"><a href="#"><img src="<? echo $img_source_sr; ?>" alt=""></a></div>
                   <div><a href="#"><img src="css/images/img02.png" width="262" height="30" alt=""></a></div>
                 </div>
-<<<<<<< HEAD
                 <p><? echo $full_name_sr; ?></p><? echo $detail; ?>
                 <p class="button"><a href="#">Rate now!</a></p>
-=======
-                <p><?php echo $full_name_sr; ?></p><?php echo $detail; ?>
-                <p class="button"><a href="#">Read Full Details</a></p>
->>>>>>> ef85b9b09fbc3c86165f8a0efdb6d731a28de63a
               </section>
             </div>
           </div>
-          
-		
         </div>
       </div>
-<<<<<<< HEAD
     
 		<?
 	}
 ?>
 </div>
-=======
-    </div>
-	
-		<?php
-        
-            }
-        ?>
->>>>>>> ef85b9b09fbc3c86165f8a0efdb6d731a28de63a
   </div>
 </div>
 <div class="5grid-layout">
@@ -157,5 +136,5 @@ include("connectDB/connect.php");
     </section>
   </div>
 </div>
-<div align="center">This template  downloaded form <a href="http://all-free-download.com/free-website-templates/">free website templates</a></div></body>
+<div align=center>This template  downloaded form <a href='http://all-free-download.com/free-website-templates/'>free website templates</a></div></body>
 </html>
