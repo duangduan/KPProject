@@ -70,7 +70,7 @@ include("connectDB/connect.php");
                   <div class="image-style1"><a href="#"><img src="images/pics06.jpg" alt=""></a></div>
                   <div><a href="#"><img src="css/images/img02.png" width="262" height="30" alt=""></a></div>
                 </div>
-                <p>Pellentesque viverra enim.Tristique ante ut risus. Quisque dictum. Integer nisl risus, sagittis convallis, rutrum id, elementum.</p>
+                <p> <? echo $full_name;?></p>
                 <p class="button"><a href="#">Read Full Details</a></p>
               </section>
             </div>
