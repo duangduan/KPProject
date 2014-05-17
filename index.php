@@ -1,5 +1,5 @@
 <?php
-
+include("connectDB/connect.php");
 
 ?>
 
@@ -43,8 +43,24 @@
     </div>
     <div id="feature-content">
       <section>
-        <h2>Gravida nibh quis urna</h2>
+        <h2>รายชื่อผู้บรรยาย</h2>
       </section>
+	  
+	  <?php
+	  
+	  $slqSelectDub = "SELECT * FROM dub";
+	  $sqlQueryDub = mysql_query($slqSelectDub);
+	  
+	  while($slqSelectDub = mysql_fetch_array($sqlQueryDub)){
+	  
+	  		//$img_source_sr = "images/noimage02.jpg";
+			$full_name	= $$slqSelectDub[1];
+	  	
+	
+	  
+	  ?>
+	  
+	  
       <div class="row">
         <div class="12u">
           <div class="row">
@@ -58,40 +74,15 @@
                 <p class="button"><a href="#">Read Full Details</a></p>
               </section>
             </div>
-            <div class="3u">
-              <section>
-                <div>
-                  <div class="image-style1"><a href="#"><img src="images/pics12.jpg" alt=""></a></div>
-                  <div><a href="#"><img src="css/images/img02.png" width="262" height="30" alt=""></a></div>
-                </div>
-                <p>Pellentesque viverra enim.Tristique ante ut risus. Quisque dictum. Integer nisl risus, sagittis convallis, rutrum id, elementum.</p>
-                <p class="button"><a href="#">Read Full Details</a></p>
-              </section>
-            </div>
-            <div class="3u">
-              <section>
-                <div>
-                  <div class="image-style1"><a href="#"><img src="images/pics08.jpg" alt=""></a></div>
-                  <div><a href="#"><img src="css/images/img02.png" width="262" height="30" alt=""></a></div>
-                </div>
-                <p>Pellentesque viverra enim.Tristique ante ut risus. Quisque dictum. Integer nisl risus, sagittis convallis, rutrum id, elementum.</p>
-                <p class="button"><a href="#">Read Full Details</a></p>
-              </section>
-            </div>
-            <div class="3u">
-              <section>
-                <div>
-                  <div class="image-style1"><a href="#"><img src="images/pics13.jpg" alt=""></a></div>
-                  <div><a href="#"><img src="css/images/img02.png" width="262" height="30" alt=""></a></div>
-                </div>
-                <p>Pellentesque viverra enim.Tristique ante ut risus. Quisque dictum. Integer nisl risus, sagittis convallis, rutrum id, elementum.</p>
-                <p class="button"><a href="#">Read Full Details</a></p>
-              </section>
-            </div>
+            
           </div>
         </div>
       </div>
     </div>
+	
+	<?
+	}
+	?>
 	<div id="feature-content">
       <div class="row">
         <div class="12u">
