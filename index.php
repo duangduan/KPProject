@@ -26,8 +26,8 @@
     <div class="row">
       <div class="12u">
         <!-- Logo -->
-        <h1><a href="#" class="mobileUI-site-name">Royale</a></h1>
-        <p>Free Responsive Template</p>
+        <h1><a href="#" class="mobileUI-site-name">ข้าวปุ้น Team..</a></h1>
+        <p>นักพากย์บอลคนไหนที่คุณชอบ ?</p>
         <!-- Nav -->
         <nav class="mobileUI-site-nav"> <a href="index.html" class="active">Homepage</a> <a href="threecolumn.html">Three Column</a> <a href="twocolumn1.html">Two Column #1</a> <a href="twocolumn2.html">Two Column #2</a> <a href="onecolumn.html">One Column</a> </nav>
       </div>
